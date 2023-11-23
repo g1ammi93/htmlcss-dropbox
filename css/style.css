@@ -8,6 +8,12 @@
 
 /* Generics */
 
+.icon::before {
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
 }
@@ -30,6 +36,10 @@ body {
 
 .wrap {
     flex-wrap: wrap;
+}
+
+.relative {
+    position: relative;
 }
 
 ul {
@@ -64,6 +74,16 @@ h2 {
     font-size: 40px;
     margin: 20px 0;
     font-weight: 600;
+}
+
+h4 {
+    font-size: 20px;
+    margin: 15px 0 0 15px;
+}
+
+h5 {
+    font-size: 15px;
+    margin: 15px 0 0px 15px;
 }
 
 /* Header */
@@ -133,20 +153,112 @@ header {
 
 .payment-section {
     flex-wrap: wrap;
-
+    margin-top: 25px;
 }
 
 .col {
-    height: 100px;
+    min-height: 100px;
     width: calc(100% / 3);
     border: 2px solid black;
     flex-direction: column;
 }
 
-.row {
-    height: 100px;
+.col-w100 {
+    margin: 20px 0 50px 0;
+    min-height: 100px;
     border: 2px solid red;
     width: 100%;
+    flex-direction: column;
+}
+
+.plan-type {
+    text-align: center;
+    border-bottom: 1px solid gray;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+h4~span {
+    font-size: 13px;
+    margin: 4px 0 0 15px;
+}
+
+h4+span {
+    font-weight: bold;
+}
+
+h4+span+span {
+    color: gray;
+    margin-bottom: 50px;
+}
+
+.plane-specific>* {
+    margin: 20px 0 0 15px;
+}
+
+.plane-specific li::before {
+    font: var(--fa-font-solid);
+    margin-right: 5px;
+}
+
+.plane-specific .user::before {
+    content: "\f007";
+}
+
+.plane-specific .folder::before {
+    content: "\f07b";
+}
+
+.plane-specific .share::before {
+    content: "\f1e0";
+    padding-top: 2px;
+}
+
+.col.flex>.button-try {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.free-try {
+    width: 90%;
+    padding: 10px 0;
+    margin-bottom: 30px;
+}
+
+.section-buy {
+    margin: 0 0 30px 15px;
+    padding-bottom: 50px;
+    position: relative;
+}
+
+.section-buy::after {
+    content: "";
+    display: block;
+    border-bottom: 1px solid gray;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 30%;
+}
+
+.plane-benefit {
+    margin-bottom: 60px;
+}
+
+.plane-benefit>* {
+    margin: 20px 0 0 15px;
+}
+
+.plane-benefit li::before {
+    font: var(--fa-font-solid);
+    margin-right: 5px;
+}
+
+.plane-benefit .check::before {
+    content: "\f00c";
+    padding-top: 2px;
+    color: rgb(0, 97, 255);
+    font-weight: bold;
 }
 
 /* Partner */
