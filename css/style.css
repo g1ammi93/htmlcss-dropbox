@@ -1,5 +1,102 @@
+/* Reset */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/* Generics */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    border: 2px solid black;
+}
+
+.flex {
+    display: flex;
+}
+
+/* Header */
+
+header {
+    background-color: rgb(180, 208, 231);
+}
+
+.navbox {
+    height: 80px;
+    width: 100%;
+    background-color: white;
+}
+
+.text-header,
+.image-header {
+    height: 200px;
+    border: 2px solid red;
+    width: 50%;
+}
+
+/* Payment Plan Section */
+
+.payment-section {
+    flex-wrap: wrap;
+
+}
+
+.col {
+    height: 100px;
+    width: calc(100% / 3);
+    border: 2px solid black;
+    flex-direction: column;
+}
+
+.row {
+    height: 100px;
+    border: 2px solid red;
+    width: 100%;
+}
+
+/* Partner */
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+/* Card Section */
+
+.card-container {
+    flex-wrap: wrap;
+}
+
+.card {}
+
+/* Partner Section */
+
+.partner {
+    flex-wrap: wrap;
+}
+
+.col-large {
+    width: calc(100% / 3);
+    border: 2px solid green;
+    height: 300px;
+}
+
+.row-large {
+    width: 100%;
+    border: 2px solid pink;
+    height: 200px;
+}
+
+/* Footer */
+
+.col-small {
+    width: calc(100% / 5);
+    border: 2px solid green;
+    height: 300px;
 }
