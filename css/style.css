@@ -82,6 +82,11 @@ h4 {
 }
 
 h5 {
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+h6 {
     font-size: 15px;
     margin: 15px 0 0px 15px;
 }
@@ -106,15 +111,18 @@ header {
     color: black;
 }
 
-.text-header>* {
+.text-header>*,
+.text-main>* {
     margin-bottom: 40px;
 }
 
-.text-header {
+.text-header,
+.text-main {
     width: calc(100% / 3);
 }
 
-.image-header {
+.image-header,
+.image-main {
     width: calc(100% / 3 * 2)
 }
 
@@ -124,7 +132,8 @@ header {
     border: 2px solid red;
 }
 
-.text-header button {
+.text-header button,
+.text-main button {
     margin-bottom: 30px;
     padding: 10px;
 }
@@ -277,13 +286,32 @@ h4+span+span {
     flex-direction: row-reverse;
 }
 
+.text-main {
+    margin-left: 15px;
+    padding-right: 15px;
+    text-align: left;
+}
+
+.text-main>h4 {
+    margin: 70px 0 15px 0;
+}
+
+.button-partner {
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+}
+
 /* Card Section */
 
 .card-container {
     flex-wrap: wrap;
 }
 
-.card {}
+.card {
+    margin-right: 10px;
+    padding-right: 30px;
+}
 
 /* Partner Section */
 
