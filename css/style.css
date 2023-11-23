@@ -21,13 +21,11 @@ body {
 .container {
     width: 1200px;
     margin: 0 auto;
-    border: 2px solid black;
 }
 
 .container-small {
     width: 1000px;
     margin: 0 auto;
-    border: 2px solid yellow;
 }
 
 .flex {
@@ -57,6 +55,10 @@ button {
     background-color: rgb(0, 97, 255);
     color: white;
     padding: 5px 13px;
+}
+
+.border {
+    border: 1px solid gray;
 }
 
 img {
@@ -129,7 +131,6 @@ header {
 .text-header,
 .image-header {
     height: 380px;
-    border: 2px solid red;
 }
 
 .text-header button,
@@ -168,14 +169,12 @@ header {
 .col {
     min-height: 100px;
     width: calc(100% / 3);
-    border: 2px solid black;
     flex-direction: column;
 }
 
 .col-w100 {
     margin: 20px 0 50px 0;
     min-height: 200px;
-    border: 2px solid red;
     width: 100%;
     flex-direction: column;
 }
@@ -416,13 +415,20 @@ h4+span+span {
     border: none;
 }
 
-.faq>li {
-    padding: 30px 0;
+.faq {
+    border-top: 1px solid black;
 }
 
-.faq>.bord {
-    border-top: 1px solid black;
+.faq>li {
+    padding: 30px 0;
     border-bottom: 1px solid black;
+}
+
+.faq>li::after {
+    font: var(--fa-font-solid);
+    margin-right: 5px;
+    content: "\f107";
+    margin-left: 350px;
 }
 
 /* Background loghi clienti partner */
@@ -461,8 +467,55 @@ h4+span+span {
 
 /* Footer */
 
+.black {
+    background-color: black;
+}
+
 .col-small {
     width: calc(100% / 5);
-    border: 2px solid green;
     height: 300px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: white;
+}
+
+.col-small>a {
+    color: white;
+    text-decoration: none;
+}
+
+.abottom {
+    margin: 5px;
+    font-size: 13px;
+}
+
+.language {
+    position: relative;
+}
+
+.language::after {
+    content: "";
+    display: block;
+    border-bottom: 1px solid white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40%;
+}
+
+.select-language {
+    font-size: 13px;
+}
+
+.col-small.no-height {
+    height: 90px;
+}
+
+.no-height>span>i {
+    padding-right: 5px;
+}
+
+.fa-caret-up {
+    padding-left: 5px;
 }
