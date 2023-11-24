@@ -646,3 +646,20 @@ h4+span+span {
 .fa-caret-up {
     padding-left: 5px;
 }
+
+/* Menù a tendina Header */
+
+.comparsa {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    bottom: 0;
+    list-style: none;
+    padding: 10px;
+    line-height: 30px;
+}
+
+li:hover .comparsa {
+    display: block;
+}
