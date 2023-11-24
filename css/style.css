@@ -149,6 +149,17 @@ header {
 .navbox a {
     text-decoration: none;
     color: black;
+    position: relative;
+}
+
+.navbox a:hover::after {
+    content: '';
+    border-bottom: 1px solid;
+    display: block;
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    width: 100%;
 }
 
 .navbox .btn {
