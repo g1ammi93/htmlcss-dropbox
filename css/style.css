@@ -70,16 +70,25 @@ img {
     width: 100%;
 }
 
+.black {
+    background-color: black;
+}
+
+/* Generics Title */
+
+h1,
+h2 {
+    margin: 20px 0;
+}
+
 h1 {
     font-size: 75px;
-    margin: 20px 0;
     text-align: left;
     font-weight: bolder;
 }
 
 h2 {
     font-size: 40px;
-    margin: 20px 0;
     font-weight: 600;
 }
 
@@ -136,7 +145,8 @@ header {
 }
 
 .text-header,
-.text-main {
+.text-main,
+.col {
     width: calc(100% / 3);
 }
 
@@ -179,13 +189,11 @@ header {
 }
 
 .payment-section {
-    flex-wrap: wrap;
     margin-top: 25px;
 }
 
 .col {
     min-height: 100px;
-    width: calc(100% / 3);
     flex-direction: column;
 }
 
@@ -328,10 +336,6 @@ h4+span+span {
 
 /* Card Section */
 
-.card-container {
-    flex-wrap: wrap;
-}
-
 .card {
     margin-right: 10px;
     padding-right: 30px;
@@ -348,10 +352,6 @@ h4+span+span {
 }
 
 /* Partner Section */
-
-.partner {
-    flex-wrap: wrap;
-}
 
 .col-large {
     width: calc(100% / 3);
@@ -486,10 +486,6 @@ h4+span+span {
 }
 
 /* Footer */
-
-.black {
-    background-color: black;
-}
 
 .col-small {
     width: calc(100% / 5);
