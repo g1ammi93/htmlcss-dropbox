@@ -6,6 +6,13 @@
     box-sizing: border-box;
 }
 
+/*  Rules */
+
+:root {
+    --border: 1px solid gray;
+    --small: 13px;
+}
+
 /* Generics */
 
 .icon::before {
@@ -52,7 +59,7 @@ a {
 }
 
 .border {
-    border: 1px solid gray;
+    border: var(--border);
 }
 
 .right-30 {
@@ -222,13 +229,13 @@ header {
 
 .plan-type {
     text-align: center;
-    border-bottom: 1px solid gray;
+    border-bottom: var(--border);
     padding: 5px;
     margin-bottom: 15px;
 }
 
 h4~span {
-    font-size: 13px;
+    font-size: var(--small);
     margin: 7px 0 0 15px;
 }
 
@@ -289,7 +296,7 @@ h4+span+span {
 .section-buy::after {
     content: "";
     display: block;
-    border-bottom: 1px solid gray;
+    border-bottom: var(--border);
     position: absolute;
     bottom: 0;
     left: 0;
@@ -507,11 +514,7 @@ h4+span+span {
 
 .abottom {
     margin: 5px;
-    font-size: 13px;
-}
-
-.language {
-    position: relative;
+    font-size: var(--small);
 }
 
 .language::after {
@@ -525,7 +528,7 @@ h4+span+span {
 }
 
 .select-language {
-    font-size: 13px;
+    font-size: var(--small)
 }
 
 .col-small.no-height {
