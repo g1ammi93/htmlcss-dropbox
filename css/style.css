@@ -46,32 +46,40 @@ ul {
     gap: 20px;
 }
 
-button,
 a {
     cursor: pointer;
     border: none;
-}
-
-button {
-    background-color: rgb(0, 97, 255);
-    color: white;
-    padding: 5px 13px;
 }
 
 .border {
     border: 1px solid gray;
 }
 
-.right-20 {
+.right-30 {
     margin-right: 30px;
+}
+
+.top-70 {
+    margin-top: 70px;
 }
 
 img {
     width: 100%;
+    display: block;
 }
 
 .black {
     background-color: black;
+}
+
+/* Sezione Buttons */
+
+.btn {
+    color: white;
+    padding: 10px;
+    display: inline-block;
+    background-color: rgb(0, 97, 255);
+    text-decoration: none;
 }
 
 /* Generics Title */
@@ -128,6 +136,7 @@ header {
     top: 0;
     left: 0;
     z-index: 1;
+    padding: 0 30px;
 }
 
 .navbox a {
@@ -135,7 +144,12 @@ header {
     color: black;
 }
 
-.center-logo {
+.navbox .btn {
+    color: white;
+    padding: 5px 10px;
+}
+
+.navbox ul {
     align-items: center;
 }
 
@@ -160,17 +174,11 @@ header {
     height: 380px;
 }
 
-.text-header button,
-.text-main button {
-    margin-bottom: 30px;
-    padding: 10px;
-}
-
 .arrow {
     font-size: 50px;
     font-weight: bolder;
     display: inline-block;
-    margin-top: 70px;
+    margin-top: 50px;
 }
 
 /* Payment Plan Section */
@@ -202,7 +210,7 @@ header {
 }
 
 .col-w100 {
-    margin: 20px 0 70px 0;
+    margin: 20px 0 0 0;
     min-height: 200px;
     width: 100%;
     flex-direction: column;
@@ -261,9 +269,15 @@ h4+span+span {
 }
 
 .free-try {
-    width: 250px;
-    padding: 12px 0;
+    width: 283px;
+    padding: 10px 0;
     margin-bottom: 30px;
+    margin-left: 15px;
+}
+
+.col-w100>a,
+.btn-slogan>a {
+    text-align: center;
 }
 
 .section-buy {
@@ -280,10 +294,6 @@ h4+span+span {
     bottom: 0;
     left: 0;
     width: 30%;
-}
-
-.plane-benefit {
-    margin-bottom: 60px;
 }
 
 .plane-benefit>* {
@@ -315,7 +325,7 @@ h4+span+span {
 }
 
 .text-main {
-    margin-left: 15px;
+    margin-left: 30px;
     padding-right: 15px;
     text-align: left;
 }
@@ -328,10 +338,7 @@ h4+span+span {
     border: 1px solid black;
     background-color: white;
     color: black;
-}
-
-.margin-70 {
-    margin-top: 70px;
+    padding: 10px 15px;
 }
 
 /* Card Section */
@@ -383,14 +390,13 @@ h4+span+span {
 
 .central-col-client {
     flex-direction: column;
-    align-items: left;
     justify-content: center;
     background-color: rgb(245, 245, 245);
     position: relative;
 }
 
 .central-col-client>* {
-    margin-left: 25px;
+    margin-left: 30px;
 }
 
 #cont-desi {
@@ -418,7 +424,6 @@ h4+span+span {
 .row-large {
     height: 300px;
     background-color: rgb(180, 208, 231);
-    margin-bottom: 70px;
     align-items: center;
     justify-content: center;
 }
@@ -430,13 +435,12 @@ h4+span+span {
 
 .post-slogan {
     width: 250px;
-    height: 35px;
+    height: 40px;
     border: none;
 }
 
 .faq {
     border-top: 1px solid black;
-    margin-bottom: 70px;
 }
 
 .faq>li {
