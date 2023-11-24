@@ -507,6 +507,56 @@ h4+span+span {
     background-color: rgb(255, 216, 48);
 }
 
+/* Effetti di Hover sui box clienti */
+
+.designit::before,
+.clear::before,
+.lonely::before,
+.hearst::before,
+.topps::before,
+.asu::before,
+.uf::before,
+.bicycle::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.designit:hover::before {
+    border: 20px solid rgb(209, 233, 205);
+}
+
+.clear:hover::before {
+    border: 20px solid rgb(255, 238, 71);
+}
+
+.asu:hover::before {
+    border: 20px solid rgb(82, 13, 37);
+}
+
+.uf:hover::before {
+    border: 20px solid rgb(0, 175, 244);
+}
+
+.topps:hover::before {
+    border: 20px solid rgb(255, 63, 63);
+}
+
+.bicycle:hover::before {
+    border: 20px solid rgb(218, 24, 41);
+}
+
+.lonely:hover::before {
+    border: 20px solid rgb(26, 64, 154);
+}
+
+.hearst:hover::before {
+    border: 20px solid rgb(201, 218, 231);
+}
+
 /* Footer */
 
 .col-small {
