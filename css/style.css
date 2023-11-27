@@ -160,7 +160,7 @@ header {
     position: relative;
 }
 
-.navbox a:hover::after {
+.navbox .bottom:hover::after {
     content: '';
     border-bottom: 1px solid;
     display: block;
@@ -207,6 +207,24 @@ header {
     margin-top: 50px;
     color: black;
 }
+
+/* Menù a tendina Header */
+
+.comparsa {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    bottom: 0;
+    list-style: none;
+    padding: 10px;
+    line-height: 30px;
+}
+
+li:hover .comparsa {
+    display: block;
+}
+
 
 /* Payment Plan Section */
 
@@ -389,7 +407,7 @@ h4+span+span {
 
 .col-large {
     width: calc(100% / 3);
-    height: 600px;
+    height: calc(100vw / 3);
 }
 
 .row-large {
@@ -466,16 +484,18 @@ h4+span+span {
     border: none;
 }
 
+/* Faq Section */
+
 .faq {
     border-top: 1px solid black;
 }
 
-.faq>li {
+.faq>li.symbol {
     padding: 30px 0;
     border-bottom: 1px solid black;
 }
 
-.faq>li::after {
+.faq>li.symbol::after {
     font: var(--fa-font-solid);
     margin-right: 5px;
     content: "\f107";
@@ -645,21 +665,4 @@ h4+span+span {
 
 .fa-caret-up {
     padding-left: 5px;
-}
-
-/* Menù a tendina Header */
-
-.comparsa {
-    display: none;
-    position: absolute;
-    left: 0;
-    top: 50px;
-    bottom: 0;
-    list-style: none;
-    padding: 10px;
-    line-height: 30px;
-}
-
-li:hover .comparsa {
-    display: block;
 }
